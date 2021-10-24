@@ -1,4 +1,35 @@
-.float-rigth{
+.float-rigth {
   display: flex;
   justify-content: right;
+}
+
+.container-particles {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+.titulo-particles {
+  padding-top: 4rem;
+  color: azure;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.particles {
+  height: 12rem;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.z-index {
+  z-index: 1;
+}
+
+.container-particles .child {
+  grid-row-start: 1;
+  grid-column-start: 1;
 }

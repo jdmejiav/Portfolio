@@ -1,6 +1,9 @@
 import React from "react";
 import NavBar from "./components/Home/Navbar";
 import ParticlesComponent from "./components/Home/particles";
+import Moto from "./components/Models/Moto"
+
+
 
 export default class HomeComponent extends React.Component {
   constructor() {
@@ -13,7 +16,7 @@ export default class HomeComponent extends React.Component {
         <NavBar></NavBar>
 
         <ParticlesComponent></ParticlesComponent>
-
+        
       </div>
     );
   }

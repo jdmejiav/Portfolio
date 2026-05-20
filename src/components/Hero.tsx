@@ -1,5 +1,5 @@
 import styles from '../App.module.css';
-import { contactLinks, highlights, profile } from '../data/portfolio';
+import { contactLinks, highlights, profile, publicAsset } from '../data/portfolio';
 import { useAnalytics } from '../hooks/useAnalytics';
 
 export function Hero() {
@@ -38,8 +38,13 @@ export function Hero() {
       </div>
       <aside className={styles.heroPanel} aria-label="Career highlights">
         <picture className={styles.profilePhoto}>
-          <source srcSet="/assets/profile-portrait.webp" type="image/webp" />
-          <img src="/assets/profile-portrait.png" alt="Juan Diego Mejia Vargas" loading="eager" decoding="async" />
+          <source srcSet={publicAsset('assets/profile-portrait.webp')} type="image/webp" />
+          <img
+            src={publicAsset('assets/profile-portrait.png')}
+            alt="Juan Diego Mejia Vargas"
+            loading="eager"
+            decoding="async"
+          />
         </picture>
         <div className={styles.availability}>
           <span>Summary</span>

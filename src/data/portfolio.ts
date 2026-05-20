@@ -32,6 +32,8 @@ export type Certification = {
   details: string;
 };
 
+export const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 export const profile = {
   name: 'Juan Diego Mejia Vargas',
   title: 'Software Engineer',
@@ -45,7 +47,7 @@ export const profile = {
   email: 'juandieg0mv22@gmail.com',
   summary:
     'Software Engineer with over 5 years of experience specializing in .NET, React, and the Azure ecosystem. Active contributor to architectural design discussions for robust and scalable microservices and event-driven systems. Proven record modernizing legacy applications by moving them to the cloud, reducing infrastructure costs, and improving scalability and performance.',
-  cvPath: '/assets/Juan_Diego_Mejia_Vargas_CV.pdf',
+  cvPath: publicAsset('assets/Juan_Diego_Mejia_Vargas_CV.pdf'),
 };
 
 export const contactLinks: ContactLink[] = [

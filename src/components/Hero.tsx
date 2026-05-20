@@ -37,8 +37,12 @@ export function Hero() {
         </div>
       </div>
       <aside className={styles.heroPanel} aria-label="Career highlights">
+        <picture className={styles.profilePhoto}>
+          <source srcSet="/assets/profile-portrait.webp" type="image/webp" />
+          <img src="/assets/profile-portrait.png" alt="Juan Diego Mejia Vargas" loading="eager" decoding="async" />
+        </picture>
         <div className={styles.availability}>
-          <span>Recruiter Snapshot</span>
+          <span>Summary</span>
           <strong>.NET + React + Azure</strong>
         </div>
         <div className={styles.highlightGrid}>

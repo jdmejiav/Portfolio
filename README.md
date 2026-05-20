@@ -1,6 +1,6 @@
 # Juan Diego Mejia Vargas Portfolio
 
-Modern recruiter-facing portfolio built with React, Vite, TypeScript, and CSS Modules.
+Modern personal portfolio built with React, Vite, TypeScript, and CSS Modules.
 
 ## Run locally
 
@@ -27,4 +27,4 @@ npm run preview
 
 - `chore: scaffold vite react portfolio`
 - `feat: add cv-driven portfolio content`
-- `feat: build responsive recruiter portfolio ui`
+- `feat: build responsive portfolio ui`

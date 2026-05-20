@@ -9,7 +9,7 @@ function getInitialTheme(): Theme {
     return storedTheme;
   }
 
-  return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  return 'dark';
 }
 
 export function useTheme() {

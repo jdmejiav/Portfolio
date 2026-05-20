@@ -7,8 +7,8 @@ export function AboutSection() {
     <Section
       eyebrow="About"
       id="about"
-      title="Built for modernization work that needs calm execution."
-      intro="Juan brings backend depth, front-end delivery, cloud migration practice, and architecture participation across product and enterprise contexts."
+      title="Profile"
+      intro="Backend depth, front-end delivery, cloud migration practice, and architecture participation across product and enterprise contexts."
     >
       <div className={styles.aboutGrid}>
         <p>{profile.summary}</p>
@@ -16,6 +16,21 @@ export function AboutSection() {
           <div>
             <dt>Location</dt>
             <dd>{profile.location}</dd>
+          </div>
+          <div>
+            <dt>Timezone</dt>
+            <dd>
+              {profile.timezone.value}
+              <span>{profile.timezone.label}</span>
+            </dd>
+          </div>
+          <div>
+            <dt>Languages</dt>
+            <dd>
+              {profile.languages.map((language) => (
+                <span key={language}>{language}</span>
+              ))}
+            </dd>
           </div>
           <div>
             <dt>Email</dt>

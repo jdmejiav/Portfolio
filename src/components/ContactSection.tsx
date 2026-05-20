@@ -10,8 +10,8 @@ export function ContactSection() {
     <Section
       eyebrow="Contact"
       id="contact"
-      title="Easy next steps for recruiters and hiring teams."
-      intro="Use the CV download for screening, or reach out directly for interviews and role-fit conversations."
+      title="Get in Touch"
+      intro="Download the CV or reach out directly for role-fit conversations."
     >
       <div className={styles.contactPanel}>
         <div>

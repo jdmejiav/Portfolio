@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="JD">
+  <rect width="64" height="64" rx="16" fill="#08111f"/>
+  <circle cx="46" cy="18" r="8" fill="#29d3b2"/>
+  <text x="13" y="43" fill="#f7fbff" font-family="Arial, sans-serif" font-size="24" font-weight="800">JD</text>
+</svg>

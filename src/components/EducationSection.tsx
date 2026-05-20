@@ -7,7 +7,7 @@ export function EducationSection() {
     <Section
       eyebrow="Education"
       id="education"
-      title="Education and credentials."
+      title="Academic Background"
     >
       <div className={styles.credentialsGrid}>
         <article className={styles.credentialCard}>
@@ -19,15 +19,17 @@ export function EducationSection() {
             </p>
           ))}
         </article>
-        <article className={styles.credentialCard}>
-          <h3>Certifications</h3>
-          {certifications.map((item) => (
-            <p key={item.title}>
-              <strong>{item.title}</strong>
-              <span>{item.issuer} · {item.details}</span>
-            </p>
-          ))}
-        </article>
+        {certifications.length > 0 ? (
+          <article className={styles.credentialCard}>
+            <h3>Certifications</h3>
+            {certifications.map((item) => (
+              <p key={item.title}>
+                <strong>{item.title}</strong>
+                <span>{item.issuer} · {item.details}</span>
+              </p>
+            ))}
+          </article>
+        ) : null}
       </div>
     </Section>
   );

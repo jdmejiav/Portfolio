@@ -26,10 +26,21 @@ export type SkillGroup = {
   items: string[];
 };
 
+export type Certification = {
+  title: string;
+  issuer: string;
+  details: string;
+};
+
 export const profile = {
   name: 'Juan Diego Mejia Vargas',
   title: 'Software Engineer',
   location: 'Medellin, Colombia',
+  timezone: {
+    label: 'America/Bogota (UTC−05:00)',
+    value: 'Bogotá (GMT-5)',
+  },
+  languages: ['Spanish (Native)', 'English (B2 – Upper-Intermediate/Advanced)'],
   phone: '+57 316 065 2200',
   email: 'juandieg0mv22@gmail.com',
   summary:
@@ -56,7 +67,7 @@ export const highlights = [
   { value: '5+', label: 'Years building production software' },
   { value: '30%', label: 'Planning-time reduction on Azure deployment' },
   { value: '40%', label: 'Production-time reduction through automation' },
-  { value: 'AZ-900', label: 'Azure Fundamentals certified in 2025' },
+  { value: 'GMT-5', label: 'Bogotá timezone for remote collaboration' },
 ];
 
 export const experience: ExperienceItem[] = [
@@ -155,7 +166,8 @@ export const projects: Project[] = [
 ];
 
 export const skillGroups: SkillGroup[] = [
-  { label: 'Languages', items: ['C#', 'JavaScript', 'TypeScript', 'Kotlin', 'Java'] },
+  { label: 'Programming Languages', items: ['C#', 'JavaScript', 'TypeScript', 'Kotlin', 'Java'] },
+  { label: 'Human Languages', items: profile.languages },
   { label: 'Frameworks', items: ['.NET', 'React', 'Angular', 'Android Studio'] },
   { label: 'Databases', items: ['PL/SQL', 'MSSQL Server', 'MYSQL', 'MongoDB', 'CosmosDB'] },
   { label: 'Cloud', items: ['Azure', 'GCP'] },
@@ -171,10 +183,4 @@ export const education = [
   },
 ];
 
-export const certifications = [
-  {
-    title: 'AZ-900 - Azure Fundamentals',
-    issuer: 'Microsoft Azure',
-    details: '2025',
-  },
-];
+export const certifications: Certification[] = [];

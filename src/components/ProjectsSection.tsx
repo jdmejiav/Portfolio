@@ -7,8 +7,8 @@ export default function ProjectsSection() {
     <Section
       eyebrow="Projects"
       id="projects"
-      title="Selected work translated from the CV into recruiter-readable project stories."
-      intro="These are framed from professional experience because the CV does not list a separate personal projects section."
+      title="Selected Work"
+      intro="Professional projects and platform contributions from recent engineering roles."
     >
       <div className={styles.projectGrid}>
         {projects.map((project) => (
